@@ -1,0 +1,256 @@
+/* Hace que la web se vea bien en el celular */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Cabecera */
+header {
+    background-color: #1DB954;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header p {
+    margin: 5px 0;
+}
+
+.bienvenida {
+  
+}
+
+/* Botón de menú */
+.menu-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* El menú está oculto al inicio */
+#menu {
+    display: none;
+    background-color: #222;
+    padding: 10px ;
+    margin-top: 10px;
+    border-radius: 1px;
+}
+
+/* Estilo cuando el menú está visible */
+#menu.show {
+    display: block;
+}
+
+/* Estilo de los enlaces del menú */
+#menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu ul li {
+    margin: 10px 0;
+}
+
+#menu ul li a {
+    color: #1DB954;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#menu ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Secciones generales */
+section {
+    padding: 20px;
+}
+
+section h2 {
+    color: #1DB954;
+    border-bottom: 1px solid #1DB954;
+    padding-bottom: 5px;
+}
+
+
+/* Galería de imágenes */
+img {
+    width: 100%;              /* La imagen ocupa todo el ancho disponible */
+    max-width: 700px;          /* No crecerá más de su tamaño original */
+    height: auto;              /* Mantiene la proporción (no se deforma) */
+    display: block;            /* Quita espacios raros abajo de la imagen */
+    margin: 20px auto;         /* Centra la imagen horizontalmente */
+    border-radius: 10px;       /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);  /* Sombra suave */
+    transition: transform 0.3s; /* Efecto suave al pasar el mouse */
+}
+
+img:hover {
+    transform: scale(1.05);    /* Hace un pequeño zoom al pasar el mouse */
+}
+
+/* Formulario de contacto */
+form input, form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+form button {
+    background-color: #1DB954;
+    color: #000;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #17a44d;
+}
+
+/* Links de redes sociales */
+.redes a {
+    color: #1DB954;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.redes a:hover {
+    text-decoration: underline;
+}
+
+.menu-btn {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: #1DB954;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 24px;
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+.menu-btn {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: #1DB954;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 24px;
+  border-radius: 8px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  top: 50px;
+  left: 10px;
+  background-color: #111;
+  border: 1px solid #1DB954;
+  border-radius: 10px;
+  padding: 10px;
+  z-index: 999;
+}
+
+.mobile-menu a {
+  display: block;
+  color: #1DB954;
+  text-decoration: none;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.mobile-menu a:hover {
+  background-color: #1DB954;
+  color: #111;
+  border-radius: 5px;
+}
+
+
+.language-switch {
+  font-size: 8px;
+  text-align: right;
+  padding: 8px 12px;
+}
+
+.language-switch a {
+  color: #1DB954;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #000, #1DB954);
+}
+
+.contenedor-imagenes {
+      display: flex;
+      justify-content: center; /* Centra horizontalmente */
+      gap: 12px; /* Espacio entre las imágenes */
+    }
+
+    .contenedor-imagenes img {
+      width: 120px; /* Ajusta el tamaño según lo necesites */
+      height: auto;
+      border-radius: 10px;
+    }
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+  padding: 20px;
+}
+
+.partners-section {
+  padding: 20px;
+  text-align: center;
+  background-color: #000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.partners-section h1 {
+  width: 100%;
+}
+
+.partners-section img {
+  background-color:#1DB954;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+footer {
+  text-align: center;
+  padding: 12px;
+  font-size: 12px;
+  color: #aaa;
+}
