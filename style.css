@@ -214,7 +214,7 @@ form button:hover {
     }
 
     .contenedor-imagenes img {
-      width: 240px; /* Ajusta el tamaño según lo necesites */
+      width: 344px; /* Ajusta el tamaño según lo necesites */
       height: auto;
       border-radius: 12px;
     }
