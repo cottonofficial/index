@@ -214,9 +214,9 @@ form button:hover {
     }
 
     .contenedor-imagenes img {
-      width: 120px; /* Ajusta el tamaño según lo necesites */
+      width: 240px; /* Ajusta el tamaño según lo necesites */
       height: auto;
-      border-radius: 10px;
+      border-radius: 12px;
     }
 
 .product-grid {
